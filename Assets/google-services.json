@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "839470842031",
+    "firebase_url": "https://aquapets-47408.firebaseio.com",
+    "project_id": "aquapets-47408",
+    "storage_bucket": "aquapets-47408.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:839470842031:android:b1a8247527b99d53",
+        "android_client_info": {
+          "package_name": "com.gamesuperfun.aquapets"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "839470842031-ic7oc0g8a5a7ucsu5i9d0b4gq60h6oev.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gamesuperfun.aquapets",
+            "certificate_hash": "3d160ccbe1aaae104e22f01c4f5bc554f22ea656"
+          }
+        },
+        {
+          "client_id": "839470842031-4r3tb633g6f6li070e0udahd6p6gs0qe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgqOvZ-_6KHwILnGvHYc5vfxyP7Qd9AB4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "839470842031-4r3tb633g6f6li070e0udahd6p6gs0qe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
