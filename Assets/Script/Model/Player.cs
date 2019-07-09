@@ -16,15 +16,67 @@ public class Player
     private string name;
     private string training;
     private bool progressive;
+    private int waterGoal;
+    private readonly int waterDrankToday;
+    private int level;
+    private string lastDayLevelUp; //saves the last day with level up
+    private int currentCupSize;
 
     static Player()
     {
         instance = new Player();
+        instance.CurrentCupSize = 250;
     }
 
     /*
      * GETTERs and SETTERs [START]
      */
+
+    public int CurrentCupSize
+    {
+        get => PlayerPrefs.GetInt("userCurrentCupSize");
+        set
+        {
+            PlayerPrefs.SetInt("userCurrentCupSize", value);
+            currentCupSize = value;
+        }
+    }
+
+    public string LastDayLevelUp
+    {
+        get => PlayerPrefs.GetString("userLastDayLevelUp");
+        set
+        {
+            PlayerPrefs.SetString("userLastDayLevelUp", value);
+            lastDayLevelUp = value;
+        }
+    }
+
+    public int Level
+    {
+        get => Level = PlayerPrefs.GetInt("userLevel");
+        set
+        {
+            PlayerPrefs.SetInt("userLevel", value);
+            level = value;
+        }
+    }
+
+    public int WaterDrankToday
+    {
+        get => PlayerPrefs.GetInt(Today());
+    }
+
+    public int WaterGoal
+    {
+        get => PlayerPrefs.GetInt("userWaterGoal");
+        set
+        {
+            PlayerPrefs.SetInt("userWaterGoal", value);
+            waterGoal = value;
+        }
+    }
+
     public string Email
     {
         get => PlayerPrefs.GetString("userEmail");
@@ -89,9 +141,13 @@ public class Player
      * GETTERs and SETTERs [END]
      */
 
+    private string Today()
+    {
+        return DateTime.Today.ToString(DATE_PATTERN_FORMAT);
+    }
 
     /* Delete some Player attribute
-    * Used by: Forms WHERE [SetUp1, SetUp2 - Scene] WHEN input_field is empty
+    * Used by: Forms WHERE [SetUp1.scene, SetUp2.scene] WHEN input_field is empty
     */
     public void DeleteKey(string key)
     {
@@ -99,38 +155,69 @@ public class Player
     }
 
     /* Saves the amount of drank water, in milliliters
-     * Used by: CupButton WHERE [Home - Scene] WHEN onClick
+     * Used by: CupButton WHERE [Home.scene] WHEN onClick
      */
     public void AddWaterHistory(int amount)
     {
-        string today = DateTime.Today.ToString(DATE_PATTERN_FORMAT);
+        string today = Today();
         int totalAmount = amount;
         if (PlayerPrefs.HasKey(today))
         {
             totalAmount += PlayerPrefs.GetInt(today);
         }
 
-        Debug.Log(String.Format(" Day [{0}] user drank [{1}] ml", today, totalAmount));
+        Debug.Log(String.Format("Day [{0}] user drank [{1}] ml", today, totalAmount));
         PlayerPrefs.SetInt(today, totalAmount);
+
+        if (totalAmount >= WaterGoal && !LastDayLevelUp.Equals(Today()))
+        {
+            Debug.Log(String.Format("LevelUp, [{0}]/[{1}] ml, [{2}]", totalAmount, WaterGoal, !LastDayLevelUp.Equals(Today())));
+            LevelUp();
+        }
+    }
+
+    /* Get history from this week
+     * Usage: Player.instance.GetWaterWeekHistory()
+     * Used by: todo
+     * 
+     */
+    public ArrayList GetWaterWeekHistory()
+    {
+        ArrayList result = new ArrayList();
+        DayOfWeek dayWeek = DateTime.Today.DayOfWeek;
+        int days = (int)dayWeek;
+        DateTime firstDay = DateTime.Today.AddDays(-days);
+        for (int i = 0; i <= days; i++)
+        {
+            string key = firstDay.AddDays(i).ToString(DATE_PATTERN_FORMAT);
+            Debug.Log("HISTORY: " + i + " " + PlayerPrefs.GetInt(key));
+            result.Add(PlayerPrefs.GetInt(key));
+        }
+
+        return result;
+
     }
 
 
-    /* Get history from last X days;
-     * Eg: GetWaterHistory(0) -> history from today 
-     *     GetWaterHistory(7) -> history from last 7 days
-     *     
-     * Used by: 
-     */
-    public void GetWaterHistory(int days)
+    /* Set the user water goal
+    *  formula: Weight * 35ml
+    * Used by: ConfirmButton WHERE [SetUp2.scene] WHEN onClick
+    */
+    public void DefineWaterGoal()
     {
-        OrderedDictionary result = new OrderedDictionary();
-        DateTime firstDay = DateTime.Today.AddDays(-days);
-
-        for(int i=0; i <= days; i++)
+        //TODO improve formula
+        if(Weight > 0)
         {
-            string key = firstDay.AddDays(i).ToString(DATE_PATTERN_FORMAT);
-            Debug.Log(key + " -> " + PlayerPrefs.GetInt(key));
+            WaterGoal = Weight * 35;
         }
-       
+    }
+
+    /* Increment player level when reachs the daily goal
+    *  Used by: Bar.cs WHERE [Bar.cs] WHEN fillAmount is full(bar is competed)
+    */
+    public void LevelUp()
+    {
+        Level = Level + 1;
+        LastDayLevelUp = Today();
     }
 }
