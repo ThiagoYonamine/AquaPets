@@ -119,7 +119,8 @@ public class googleSignIn : MonoBehaviour
 
                 if (signIn.Status.Equals(TaskStatus.RanToCompletion))
                 {
-                   SceneManager.LoadScene("Home", LoadSceneMode.Single);
+                    Info.text += " #completed";
+                    SceneManager.LoadScene("Home", LoadSceneMode.Single);
                 }
             }
         }

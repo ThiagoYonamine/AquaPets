@@ -21,20 +21,61 @@ public class Player
     private int level;
     private string lastDayLevelUp; //saves the last day with level up
     private int currentCupSize;
+    private int normalCoin;
+    private int specialCoin;
+    private string lastPoop = "";
 
     static Player()
     {
         instance = new Player();
-        instance.CurrentCupSize = 250;
     }
 
     /*
      * GETTERs and SETTERs [START]
      */
 
+    public string LastPoop
+    {
+        get => lastPoop.Length > 0 ? lastPoop : PlayerPrefs.GetString("userLastPoop");
+        set
+        {
+            PlayerPrefs.SetString("userLastPoop", value);
+            lastPoop = value;
+        }
+    }
+
+    public int NormalCoin
+    {
+        get => normalCoin!=0 ? normalCoin : PlayerPrefs.GetInt("userNormalCoin");
+        set
+        {
+            PlayerPrefs.SetInt("userNormalCoin", value);
+            normalCoin = value;
+        }
+    }
+
+    public int SpecialCoin
+    {
+        get => specialCoin != 0 ? specialCoin : PlayerPrefs.GetInt("userSpecialCoin");
+        set
+        {
+            PlayerPrefs.SetInt("userSpecialCoin", value);
+            specialCoin = value;
+        }
+    }
+
     public int CurrentCupSize
     {
-        get => PlayerPrefs.GetInt("userCurrentCupSize");
+        get
+        {
+            if (PlayerPrefs.GetInt("userCurrentCupSize") > 0)
+                return PlayerPrefs.GetInt("userCurrentCupSize");
+            else
+            {
+                CurrentCupSize = 250;
+                return CurrentCupSize;
+            }
+        }
         set
         {
             PlayerPrefs.SetInt("userCurrentCupSize", value);

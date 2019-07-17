@@ -1,0 +1,520 @@
+fileFormatVersion: 2
+guid: 3851cbd8bb10e034a96c7daddef0c35f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2640032191131131899
+    second: dog1_0
+  - first:
+      213: -8458529090459034558
+    second: dog1_1
+  - first:
+      213: -8640040712709143222
+    second: dog1_2
+  - first:
+      213: 361099570010149279
+    second: dog1_3
+  - first:
+      213: 3262122589427836327
+    second: dog1_4
+  - first:
+      213: -147422956114243639
+    second: dog1_5
+  - first:
+      213: 2488277117588522653
+    second: dog1_6
+  - first:
+      213: -7449921660795701672
+    second: dog1_7
+  - first:
+      213: -4451451229578994735
+    second: dog1_8
+  - first:
+      213: 6945918876042684741
+    second: dog1_9
+  - first:
+      213: -8185552845647330769
+    second: dog1_10
+  - first:
+      213: 4498763862036390225
+    second: dog1_11
+  - first:
+      213: 793653204744124349
+    second: dog1_12
+  - first:
+      213: -992254856046397219
+    second: dog1_13
+  - first:
+      213: -5607717178833499957
+    second: dog1_14
+  - first:
+      213: 2046507394147601376
+    second: dog1_15
+  - first:
+      213: -603202035113832603
+    second: dog1_16
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: dog1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 698
+        width: 286
+        height: 235
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 132f73327d4daf146ae0babcbb6661ba
+      internalID: 2640032191131131899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dog1_1
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 698
+        width: 206
+        height: 275
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d81ba0b4aab93284bbd467a3100fd516
+      internalID: -8458529090459034558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dog1_2
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 701
+        width: 273
+        height: 281
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8d5d5d604859a442b2e48c110012e35
+      internalID: -8640040712709143222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dog1_3
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 705
+        width: 286
+        height: 253
+      alignment: 9
+      pivot: {x: 0.8096224, y: 0.6065915}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1178e1c75576cf44e8231aa3ff40e044
+      internalID: 361099570010149279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dog1_4
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 705
+        width: 277
+        height: 253
+      alignment: 9
+      pivot: {x: 0.8077939, y: 0.6063908}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac7c6d9f5141d9642bd0262ed20f14c2
+      internalID: 3262122589427836327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dog1_5
+      rect:
+        serializedVersion: 2
+        x: 1647
+        y: 705
+        width: 255
+        height: 253
+      alignment: 9
+      pivot: {x: 0.7909692, y: 0.6050601}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21c816baf77715044ba082bc7b8b9767
+      internalID: -147422956114243639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dog1_6
+      rect:
+        serializedVersion: 2
+        x: 1924
+        y: 705
+        width: 235
+        height: 253
+      alignment: 9
+      pivot: {x: 0.77229786, y: 0.6085147}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf438aa59257ffb4aba2cd0e87ae052f
+      internalID: 2488277117588522653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dog1_7
+      rect:
+        serializedVersion: 2
+        x: 2178
+        y: 705
+        width: 264
+        height: 277
+      alignment: 9
+      pivot: {x: 0.69108534, y: 0.55606705}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8976f6877428e34ab3233cfa30ced95
+      internalID: -7449921660795701672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dog1_8
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 351
+        width: 219
+        height: 275
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d47a024403645e149b976b39bccbaf32
+      internalID: -4451451229578994735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dog1_9
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 349
+        width: 242
+        height: 276
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72acc4b92600c2342abb562aefa21b15
+      internalID: 6945918876042684741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dog1_10
+      rect:
+        serializedVersion: 2
+        x: 1026
+        y: 352
+        width: 222
+        height: 280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 696a62dbcba7c534dbd4c1a8cee7a56d
+      internalID: -8185552845647330769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dog1_11
+      rect:
+        serializedVersion: 2
+        x: 1327
+        y: 352
+        width: 221
+        height: 280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef61454092036a941ae85952897d17cd
+      internalID: 4498763862036390225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dog1_12
+      rect:
+        serializedVersion: 2
+        x: 1585
+        y: 352
+        width: 228
+        height: 280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4024f9dd8bdb987409d5698bbf99a4b5
+      internalID: 793653204744124349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dog1_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 52
+        width: 295
+        height: 161
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12997049f88c620409f881386857ae7f
+      internalID: -992254856046397219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dog1_14
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 48
+        width: 194
+        height: 262
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3d400585c303ce4da36a3b5b9e52e64
+      internalID: -5607717178833499957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dog1_15
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 0
+        width: 256
+        height: 291
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8912fbf683160c4080ac9b0dd103138
+      internalID: 2046507394147601376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dog1_16
+      rect:
+        serializedVersion: 2
+        x: 2136
+        y: 0
+        width: 306
+        height: 270
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a1982715cb822e458eb810af00213d4
+      internalID: -603202035113832603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: be3551f1e4d3eeb458aa204c70489de9
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

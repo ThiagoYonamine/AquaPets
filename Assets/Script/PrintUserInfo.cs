@@ -9,6 +9,8 @@ public class PrintUserInfo : MonoBehaviour
     public Text userName;
     public Text userCurrentCupSize;
     public Text userLevel;
+    public Text userNormalCoin;
+    public Text userSpecialCoin;
 
     void Start()
     {
@@ -23,9 +25,18 @@ public class PrintUserInfo : MonoBehaviour
         userInfo.text += "\n userWaterDrank: " + Player.instance.WaterDrankToday;
 
         userName.text = Player.instance.Name;
-        userCurrentCupSize.text = Player.instance.CurrentCupSize.ToString() + " ml";
-        userLevel.text = "Lvl " + Player.instance.Level.ToString();
+        userCurrentCupSize.text = Player.instance.CurrentCupSize.ToString();
+        userLevel.text = Player.instance.Level.ToString();
+        userNormalCoin.text = Player.instance.NormalCoin.ToString();
+        userSpecialCoin.text = Player.instance.SpecialCoin.ToString();
 
+
+    }
+
+    private void Update()
+    {
+        userSpecialCoin.text = Player.instance.SpecialCoin.ToString();
+        userNormalCoin.text = Player.instance.NormalCoin.ToString();
     }
 
     /* Update UI cup with Player.CurrentCupSize value
@@ -33,11 +44,16 @@ public class PrintUserInfo : MonoBehaviour
      */
     public void UpdateCupSize()
     {
-        userCurrentCupSize.text = Player.instance.CurrentCupSize.ToString() + " ml";
+        userCurrentCupSize.text = Player.instance.CurrentCupSize.ToString();
     }
 
     public void UpdateUserLevel()
     {
-        userLevel.text = "Lvl " + Player.instance.Level.ToString();
+        userLevel.text = Player.instance.Level.ToString();
+    }
+
+    public void UpdateUserSpecialCoin()
+    {
+        userSpecialCoin.text = Player.instance.SpecialCoin.ToString();
     }
 }
